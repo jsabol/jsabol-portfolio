@@ -2,7 +2,7 @@
   "name": "jsabol-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jsabol.github.io/portfolio",
+  "homepage": "http://julietsabol.com",
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

@@ -1,17 +1,30 @@
+@import '../../theme/variables';
+@import '../../theme/mixins';
+
 // Styling for the navbar
 #mainNav {
   border-bottom: 1px solid fade-out($gray-900, .9);
   background-color: $white;
-  @include sans-serif-font;
   @include transition-all;
+
+
   .navbar-brand {
-    font-weight: 700;
-    text-transform: uppercase;
+		font-family: 'Pompiere', sans-serif;
+		font-weight: 700;
+		font-size: 1.6rem;
     color: $primary;
-    @include sans-serif-font;
-    &:focus,
-    &:hover {
+
+   	.name{
+	  	display: none;
+	  }
+
+    &:hover, &:focus {
       color: darken($primary, .1);
+      font-size: 2rem;
+
+      .name{
+      	display: inline;
+      }
     }
   }
   .navbar-nav {

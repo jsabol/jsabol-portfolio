@@ -1,9 +1,14 @@
+@import '../../theme/variables';
+@import '../../theme/mixins';
+
 // Styling for the portfolio section
 .portfolio-box {
   position: relative;
   display: block;
   max-width: 650px;
   margin: 0 auto;
+  height: 100%;
+
   .portfolio-box-caption {
     position: absolute;
     bottom: 0;

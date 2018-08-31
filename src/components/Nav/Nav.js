@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
+import './Nav.css'
 import { smoothScroll } from '../App/App';
 
 const Display = ({setRef}) => (
 	<nav ref={setRef} className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div className="container">
-      <a onClick={smoothScroll} className="navbar-brand" href="#page-top">Start Bootstrap</a>
+      <a onClick={smoothScroll} className="navbar-brand" href="#page-top">
+      	{"{ "}J<span className="name">uliet </span>S<span className="name">abol</span>{" }"}
+      </a>
       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
+            <a onClick={smoothScroll} className="nav-link" href="#portfolio">Work</a>
+          </li>
+          <li className="nav-item">
             <a onClick={smoothScroll} className="nav-link" href="#about">About</a>
-          </li>
-          <li className="nav-item">
-            <a onClick={smoothScroll} className="nav-link" href="#services">Services</a>
-          </li>
-          <li className="nav-item">
-            <a onClick={smoothScroll} className="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li className="nav-item">
             <a onClick={smoothScroll} className="nav-link" href="#contact">Contact</a>

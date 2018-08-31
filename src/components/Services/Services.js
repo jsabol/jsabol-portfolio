@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ScrollReveal from 'scrollreveal';
 
 const SERVICES = [
   {

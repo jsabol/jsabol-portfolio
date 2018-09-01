@@ -41,11 +41,6 @@ class App extends Component {
       	<Jumbotron />
       	<Work />
       	<About />
-      	<iframe title="tripline"
-      		style={tripLineStyle} 
-      		src="https://www.tripline.net/map?tripId=47107415554410148127D9D0315B8AE1&onSite=0" 
-      		frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen>
-      	</iframe>
       	<Contact />
       </div>
     );

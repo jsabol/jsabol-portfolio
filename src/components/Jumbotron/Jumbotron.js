@@ -21,16 +21,8 @@ const Display = () => (
           <hr />
         </div>
         <div className="col-lg-8 mx-auto">
-          <div id="basedIn" className="typing mb-5">UX Developer
-          	<Typing className="inline" speed={40} startDelay={1800} 
-          		onFinishedTyping={(e)=>document.getElementById('basedIn').classList.remove('typing')}>
-          		<span> based in </span>
-          		<span className="backspaced">Phuket, Thaila</span>
-          		<Typing.Delay ms={200} />
-          		<Typing.Speed ms={10} /><Typing.Backspace count={14} /><Typing.Speed ms={50} />McLean, Virginia
-          	</Typing>
-          </div>
-          <a onClick={ smoothScroll } className="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">My Work</a>
+        	<div className="mb-5">UX Developer</div>
+          <a onClick={ smoothScroll } className="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">See My Work</a>
         </div>
       </div>
     </div>

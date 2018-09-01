@@ -10,15 +10,6 @@ import Work from '../Work/Work';
 import Project from '../Work/Project';
 import Contact from '../Contact/Contact';
 
-const tripLineStyle = {
-  "position": "relative",
-  "margin": 0,
-  "padding": 0,
-  "height": '350px',
-  width: '100%',
-  "clear": "both"
-}
-
 const smoothScroll = (e) => {
   e.preventDefault()
   const id = e.currentTarget.getAttribute('href').slice(1)

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { Switch, Route} from "react-router-dom";
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { constructMarkdown } from 'outlining';
 import ImageZoom from 'react-medium-image-zoom';

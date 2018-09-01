@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import $ from 'jquery';
 
 import './App.css';
@@ -6,17 +7,17 @@ import Nav from '../Nav/Nav';
 import Jumbotron from '../Jumbotron/Jumbotron';
 import About from '../About/About';
 import Work from '../Work/Work';
+import Project from '../Work/Project';
 import Contact from '../Contact/Contact';
 
 const tripLineStyle = {
-	"position": "relative",
-	"margin": 0,
-	"padding": 0,
-	"height": '350px',
-	width: '100%',
-	"clear": "both"
+  "position": "relative",
+  "margin": 0,
+  "padding": 0,
+  "height": '350px',
+  width: '100%',
+  "clear": "both"
 }
-
 
 const smoothScroll = (e) => {
   e.preventDefault()
@@ -32,17 +33,28 @@ const smoothScroll = (e) => {
   $('.navbar-collapse').collapse('hide');
 }
 
+const Home = (props) => (
+  <div>
+    <Nav />
+    <Jumbotron />
+    <Work />
+    <About />
+    <Contact />
+  </div>
+)
+
 class App extends Component {
 
   render() {
     return (
-      <div id="page-top" className="App">
-      	<Nav />
-      	<Jumbotron />
-      	<Work />
-      	<About />
-      	<Contact />
-      </div>
+      <BrowserRouter>
+        <div id="page-top" className="App">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/project/:project" component={Project} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }

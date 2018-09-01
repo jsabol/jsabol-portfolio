@@ -7,6 +7,9 @@
   background-color: $white;
   @include transition-all;
 
+  &.hide{
+  	display:none;
+  }
 
   .navbar-brand {
 		font-family: 'Pompiere', sans-serif;

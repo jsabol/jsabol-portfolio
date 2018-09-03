@@ -18,7 +18,7 @@
     text-align: center;
     opacity: 0;
     color: $white;
-    background: fade-out($primary, .1);
+    background: fade-out(#000, .1);
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;
@@ -64,7 +64,7 @@
 }
 
 .project {
-	margin-top: 200px;
+	margin: 200px auto;
 	max-width: 740px;
 	padding: 0 20px;
 	font-size: 20px;
@@ -86,7 +86,7 @@
 	}
 
 	img {
-		max-width: 100%;
+		width: 100%;
 	}
 
 	.subtitle{
@@ -101,5 +101,16 @@
 
 	iframe {
 		margin: 2rem auto 0;
+	}
+
+	.caption{
+		text-align: center;
+		font-style: italic;
+		display:block;
+	}
+
+	blockquote{
+		border-left: .5rem solid #ddd;
+		padding-left: 1rem;
 	}
 }

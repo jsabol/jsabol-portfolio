@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { constructMarkdown } from 'outlining';
+//import { constructMarkdown } from 'outlining';
 import ImageZoom from 'react-medium-image-zoom';
 
 import Nav from '../Nav/Nav';
@@ -15,12 +15,21 @@ import faneverything from '!raw-loader!../../projects/faneverything.md';
 
 const PROJECTS = [
 	{
+		category: 'Leadership',
+		name: 'UX Practice',
+		imgFull: 'uxcrgt.png',
+		imgThumb: 'uxcrgt-thumb.png',
+		url: 'ux-practice',
+		content: uxPractice,
+		tags: []
+	},
+	{
 		category: 'Case Study',
 		name: 'Office of Financial Research',
 		content: ofr,
 		url: 'ofr',
-		imgFull: 'ofr-placement_imac2013_front.png',
-		imgThumb: 'ofr-placement_imac2013_front_thumb.png',
+		imgFull: 'cover.png',
+		imgThumb: 'cover.png',
 		tags: ['Case Study', 'UX Research', 'UI Design']
 	},
 	{
@@ -29,17 +38,8 @@ const PROJECTS = [
 		url: 'nested-dnd',
 		content: nestedDnd,
 		tags: [],
-		imgFull: 'nested-dnd.png',
-		imgThumb: 'nested-dnd-thumb.png',
-	},
-	{
-		category: 'Leadership',
-		name: 'UX Practice',
-		imgFull: 'uxcrgt.png',
-		imgThumb: 'uxcrgt-thumb.png',
-		url: 'ux-practice',
-		content: uxPractice,
-		tags: []
+		imgFull: 'screenshot.png',
+		imgThumb: 'screenshot_thumb.png',
 	},
 	{
 		category: 'UX',
@@ -63,7 +63,7 @@ const PROJECTS = [
 		category: 'Case Study',
 		name: 'FanEverything',
 		imgFull: 'cover.png',
-		imgThumb: 'cover.png',
+		imgThumb: 'cover-thumb.png',
 		url: 'faneverything',
 		content: faneverything,
 		tags: ["Case Study","UX Research", "Wireframes"]
@@ -78,7 +78,10 @@ function toggleNavbar(show){
 }
 
 const Image = (props)=>(
-	<ImageZoom onZoom={()=>toggleNavbar(false)} onUnzoom={()=>toggleNavbar(true)} image={props} />
+	<span>
+		<ImageZoom onZoom={()=>toggleNavbar(false)} onUnzoom={()=>toggleNavbar(true)} image={props} />
+		<span className="caption">{props.alt}</span>
+	</span>
 )
 
 const Project = ({ match: { params: { project : projectId = ""} }}) => {
@@ -87,8 +90,8 @@ const Project = ({ match: { params: { project : projectId = ""} }}) => {
 	const content = (project) ? <ReactMarkdown escapeHtml={false} source={project.content} renderers={{image: Image}} /> : null;
 	
 	// TODO: Nice to have
-	const outline = constructMarkdown(project.content); 
-	console.log(outline);
+	//const outline = constructMarkdown(project.content); 
+	//console.log(outline);
 
 	return (
 		<div>

@@ -7,7 +7,7 @@ import 'bootstrap';
 import 'magnific-popup';
 import 'jquery.easing';
 
-import 'font-awesome/css/font-awesome.min.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'magnific-popup/dist/magnific-popup.css';
 import './index.css';
 

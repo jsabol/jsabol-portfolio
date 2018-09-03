@@ -9,9 +9,9 @@ I conducted [a survey](https://shesjulie.typeform.com/to/iPH5Ba) which included 
 
 The survey produced four major discoveries: 
 
-1. Over half of users are on mobile devices.
+1. Over half of potential users are on mobile devices.
 2. Many users are reading in the evening or in bed. 
-3. Writing quality is a major painpoint.
+3. Writing quality is a major pain point.
 4. The vast majority of people are using sorting and filtering features to find fanfiction.
 
 ![](/img/faneverything/animated-stickies-slow.gif)

@@ -1,25 +1,41 @@
 import React from 'react';
 
+
+
 const Contact = () => (
-	<section id="contact">
+  <section id="contact">
     <div className="container">
       <div className="row">
         <div className="col-lg-8 mx-auto text-center">
-          <h2 className="section-heading">Let's Get In Touch!</h2>
-          <hr className="my-4" />
-          <p className="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+          <h2 className="section-heading mb-5">Contact Me</h2>
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-4 ml-auto text-center">
-          <i className="fa fa-phone fa-3x mb-3 sr-contact"></i>
-          <p>123-456-6789</p>
+        <div className="col-md-3 ml-auto text-center">
+          <a href="https://www.linkedin.com/in/jasabol/">
+            <i className="fab fa-linkedin fa-3x mb-3 sr-contact"></i>
+            <p>Linkedin</p>
+          </a>
         </div>
-        <div className="col-lg-4 mr-auto text-center">
-          <i className="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-          <p>
-            <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-          </p>
+        <div className="col-md-3 mr-auto text-center">
+          <a href="mailto:julietsabol@gmail.com">
+            <i className="far fa-envelope fa-3x mb-3 sr-contact"></i>
+            <p>
+              julietsabol@gmail.com
+            </p>
+          </a>
+        </div>
+        <div className="col-md-3 ml-auto text-center">
+          <a href="https://twitter.com/JulietSabol">
+            <i className="fab fa-twitter fa-3x mb-3 sr-contact"></i>
+            <p>@JulietSabol</p>
+          </a>
+        </div>
+        <div className="col-md-3 ml-auto text-center">
+          <a href="https://github.com/jsabol">
+            <i className="fab fa-github fa-3x mb-3 sr-contact"></i>
+            <p>jsabol</p>
+          </a>
         </div>
       </div>
     </div>

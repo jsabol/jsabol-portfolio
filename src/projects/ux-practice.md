@@ -37,8 +37,6 @@ I also acted as an Agile product owner and developer on the "UX Scorecard" appli
 
 ## Passing the ball
 
-Creating the UX Practice at Salient CRGT has been the defining achievement of my career so far. I was lucky to get on the train early and ride the wave of UX becoming a buzzword and to be part of that zeitgeist. 
+Creating the UX Practice at Salient CRGT has been the defining achievement of my career so far. I was lucky to get on the train early and be part of UX becoming a trend. 
 
 It's a pattern I've since repeated, and will likely repeat again: taking something I am passionate about, gathering people around me, getting them excited about it, then passing my knowledge on. 
-
-Being an agent of change is difficult. As the team became more and more self-sufficient, at a certain point I knew my job was done. I cut the cord carefully and the practice took a life of its own. I'm proud of the work I did, and I'm proud of what it became.
